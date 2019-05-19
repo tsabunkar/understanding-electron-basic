@@ -15,7 +15,8 @@ function createWindow(event) {
         height: 600,
         webPreferences: {
             nodeIntegration: true
-        }
+        },
+        frame: false // Creating Frameless window
     })
 
     // and load the index.html of the app.

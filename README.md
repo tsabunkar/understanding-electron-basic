@@ -10,3 +10,6 @@
   Refer : https://electronjs.org/docs/api/app
 
 ---
+
+- Renderer Process : ( Refer: https://electronjs.org/docs/api/browser-window )
+  Parent & Child process

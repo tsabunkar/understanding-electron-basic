@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hello World!</title>
+  <!-- !  When we add this style in the html, it will add on document is completely loaded, this is called
+   ! flicker (Which we will result bad user experience, so we to avoid this flicker we use -
+  ! ready-to-show to event ) -->
+  <style>
+    body {
+      height: 100%;
+      background-color: aqua;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Hello World!</h1>
+
+  <script>
+    // You can also require other files to run in this process
+    require('./renderer.js')
+  </script>
+</body>
+
+</html>
