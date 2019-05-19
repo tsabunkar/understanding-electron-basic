@@ -19,7 +19,17 @@ function createWindow(event) {
     })
 
     // and load the index.html of the app.
-    mainWindow.loadFile('index.html')
+    mainWindow.loadFile('index.html');
+
+    let mainContent = mainWindow.webContents;
+
+    mainContent.on('media-started-playing', () => {
+        console.log('Media is started');
+    })
+
+    mainContent.on('media-paused', () => {
+        console.log('Media is paused');
+    })
 
     // Open the DevTools.
     // mainWindow.webContents.openDevTools()
